@@ -32,6 +32,8 @@
         <%- page.content %>
     </div>
 
+    <!-- Display About section at the bottom of every post -->
+    <!-- Hide when post specify no_about: true in post front-matter area -->
     <% if (!page.no_about) { %>
     <div class="about">
         <h1><%= __('about_this_post') %></h1>
@@ -54,6 +56,19 @@
     </div>
     <% } %>
 
+    <!-- Declaration for Gallery Section -->
+    <!-- Only display on Gallery page -->
+    <% if(page.title == "Gallery") { %>
+        <div class="about date" id="date">
+            <h1><%= __('About this Gallery') %></h1>
+            <div class="details">
+                <span>©<%- page.date.year() %></span>
+                <span><%- config.author %>. All rights reserved.</span>
+            </div>
+        </div>    
+    <% } %>
+
+    <!-- At the bottom of post, display paginator for previous post or next post -->
     <div class="container post-prev-next">
         <% if (page.prev) { %>
         <a href="<%= url_for(page.prev.path) %>" class="next">
@@ -76,24 +91,5 @@
         </a>
         <% } else { %><a class="prev"></a><% } %>
     </div>
-
-    <% if (!page.no_comments) { %>
-        <% if (config.waline) { %>
-        <div class="container">
-            <div id="waline"></div>
-            <script>
-                new Waline({
-                    el: "#waline",
-                    <% for (const i in config.waline) { %>
-                    <%- i %>: <%- config.waline[i] %>,
-                    <% } %>
-                });
-            </script>
-        </div>
-        <% } %>
-        <% if (config.giscus) { %>
-        <%- config.giscus %>
-        <% } %>
-    <% } %>
 </article>
 <% } %>

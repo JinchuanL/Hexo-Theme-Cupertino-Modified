@@ -76,18 +76,14 @@ footer:
     # the items after the title, display as links
     Tags: /tags
     Categories: /categories
-    Resume: /resume
+    Resume: /portfolio/resume/JinchuanLi-Resume.pdf
     About: /about
-    #RSS: /atom.xml
+    RSS - Atom: /atom.xml
+    RSS - RSS2: /rss2.xml
   # also the title
   Projects:
     # the items
     Personal Portfolio: https://github.com/JinchuanL/Personal_Portfolio
-    # Author's project examples
-    # RSA CLI: https://github.com/MrWillCom/rsa-cli
-    # Hexo Theme Cupertino: https://github.com/MrWillCom/hexo-theme-cupertino
-    # A Calendar: https://github.com/MrWillCom/a-calendar
-    # Auto Mirroring Bucket: https://github.com/MrWillCom/auto-mirroring-bucket
   # the title
   Me:
     # items

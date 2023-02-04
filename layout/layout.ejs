@@ -27,12 +27,6 @@
         <% if (theme.search == true && page.type == 'search') { %>
         <%- js('js/search.js') %>
         <% } %>
-        <% if (config.tidio) { %> 
-        <%- js(config.tidio) %> 
-        <% } %>
-        <% if (config.ackee) { %>
-        <%- config.ackee %>
-        <% } %>
 
         <% if (theme.scroll_reveal) { %>
         <script src="https://unpkg.com/scrollreveal"></script>
