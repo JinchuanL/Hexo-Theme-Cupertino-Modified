@@ -74,12 +74,14 @@ footer:
   # the title
   Blog:
     # the items after the title, display as links
-    Tags: /tags
-    Categories: /categories
-    Resume: /portfolio/resume/JinchuanLi-Resume.pdf
     About: /about
+    Categories: /categories
+    Tags: /tags
+    Resume: /portfolio/resume/JinchuanLi-Resume.pdf
     RSS - Atom: /atom.xml
     RSS - RSS2: /rss2.xml
+    Update History: /update-history
+    
   # also the title
   Projects:
     # the items

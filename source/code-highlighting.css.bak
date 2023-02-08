@@ -1,5 +1,4 @@
 /* This Code Highlighting Theme is based on GitHub Theme */
-/* Modified by Andy at 07/02/2023, changed to based on IntelliJ IDEA */
 
 .gutter {
     color: var(--grey);
@@ -10,14 +9,12 @@
     color: #22863a;
 }
 
-
-
 .highlight .attr, .highlight .meta, .highlight .meta-keyword, .highlight .attribute, .highlight .number, .highlight .selector-class {
     color: #005cc5
 }
 
 .highlight .string {
-    color: #648856;
+    color: #032f62;
 }
 
 .highlight .symbol {
@@ -32,20 +29,8 @@
     color: #6f42c1;
 }
 
-.highlight .keyword, .type {
-    color: #d57126;
-}
-
-.highlight .title.function_, .title.class_ {
-    color: #ffc263
-}
-
-.highlight .comment {
-    color: #a7b8c7
-}
-
-.highlight .line {
-    color: #808080
+.highlight .keyword {
+    color: #d73a49;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -69,13 +54,5 @@
     }
     .highlight .keyword {
         color: #ff7b72;
-    }
-
-    .highlight .comment {
-        color: #808080
-    }
-    
-    .highlight .line {
-        color: #a7b8c7
     }
 }
