@@ -71,7 +71,6 @@ hr,
   border-radius: 10px;
 }
 
-.content table,
 .content video {
   display: block;
 }
@@ -82,6 +81,8 @@ hr,
   border-radius: 15px;
   max-width: 800px;
   overflow-x: auto;
+  display: block;
+  background-color: var(--codebackground-black)
 }
 
 .content table tr {
@@ -96,6 +97,7 @@ hr,
 .content table td {
   margin: 0;
   padding: 6px 12px;
+  background-color: var(--codebackground-black)
 }
 
 .content table th {
@@ -117,6 +119,28 @@ hr,
 .content table tbody tr:last-child td:last-child {
   border-bottom-right-radius: 15px;
 }
+
+
+/* Mac Code Block boarder */
+.content mac {
+  width:10px;
+  height:10px;
+  border-radius:5px;
+  float:left;
+  margin:10px 0 0 5px;
+}
+.content b1 {
+  background:#E0443E;
+  margin-left: 10px;
+}
+.content b2 { background:#DEA123; }
+.content b3 { background:#1AAB29; }
+.content warpper{
+  background:#121212;
+  border-radius:5px;
+  width:400px;
+}
+/* /Mac Code Block boarder */
 
 @media screen and (max-width: 800px) {
   .content table,
@@ -162,7 +186,7 @@ hr,
   padding: 20px 24px;
 }
 
-.content > pre > code {
+.content > pre > code { 
   background-color: transparent;
 }
 

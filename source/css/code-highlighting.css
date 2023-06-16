@@ -11,7 +11,6 @@
 }
 
 
-
 .highlight .attr, .highlight .meta, .highlight .meta-keyword, .highlight .attribute, .highlight .number, .highlight .selector-class {
     color: #005cc5
 }
@@ -41,11 +40,11 @@
 }
 
 .highlight .comment {
-    color: #a7b8c7
+    color: #808080
 }
 
 .highlight .line {
-    color: #808080
+    color: #a7b8c7
 }
 
 @media (prefers-color-scheme: dark) {

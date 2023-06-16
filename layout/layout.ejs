@@ -28,6 +28,7 @@
         <%- js('js/search.js') %>
         <% } %>
 
+        <!-- ScrollReveal -->
         <% if (theme.scroll_reveal) { %>
         <script src="https://unpkg.com/scrollreveal"></script>
         <script>
@@ -38,7 +39,9 @@
             })
         </script>
         <% } %>
+        <!-- /ScrollReveal -->
 
+        <!-- BackToTop function -->
         <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
         <script>addBackToTop({
             diameter: 50, // Button size
@@ -48,12 +51,12 @@
         </script>
         <style>
         #back-to-top {
-            /* border-radius: 0; */  /* Set to 0 make the button square */
             opacity: 0.2;   /* Lower the number to make the button invisiable */
         }
         #back-to-top:hover {
             opacity: 0.4;
         }
         </style>
+        <!-- /BackToTop -->
     </body>
 </html>

@@ -4,6 +4,10 @@ body[data-color-scheme="auto"], body[data-color-scheme="light"] {
     --white: #fff;
     --white-1: rgb(229.5, 229.5, 229.5);
     --white-2: rgb(204, 204, 204);
+    --green-3: rgb(30, 255, 0);
+    
+    /* Customerize black used for code block background */
+    --codebackground-black: #171717;
 
     --grey: rgb(127.5, 127.5, 127.5);
 

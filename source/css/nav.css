@@ -10,6 +10,7 @@ nav {
     -webkit-backdrop-filter: var(--blur);
     backdrop-filter: var(--blur);
     transition: height 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+    /* box-shadow: 0 0 25px #fd97fb; */
 }
 
 nav>.inner {
@@ -92,11 +93,11 @@ body[data-color-scheme="auto"] nav .nav-item-github, body[data-color-scheme="lig
     background-image: url(/theme-img/github-mark-dark.png);
 }
 
-body[data-color-scheme="auto"] nav .nav-item-linkedin, body[data-color-scheme="light"] nav .nav-item-patreon {
+body[data-color-scheme="auto"] nav .nav-item-linkedin, body[data-color-scheme="light"] nav .nav-item-linkedin {
     background-image: url(/theme-img/linkedin-logo-white.png);
 }
 
-body[data-color-scheme="auto"] nav .nav-item-weibo, body[data-color-scheme="light"] nav .nav-item-codepen {
+body[data-color-scheme="auto"] nav .nav-item-weibo, body[data-color-scheme="light"] nav .nav-item-weibo {
     background-image: url(/theme-img/weibo-logo-white.png);
 }
 

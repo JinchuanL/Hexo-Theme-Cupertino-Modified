@@ -17,3 +17,8 @@ categories: Categories
 tags: Tags
 next_post: Next
 prev_post: Previous
+codeblock:
+  copy_button: Copy
+  copy_success: Copy Success
+  copy_failure: Copy Failure
+

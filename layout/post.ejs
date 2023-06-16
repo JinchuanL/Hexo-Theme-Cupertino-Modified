@@ -1,3 +1,4 @@
+<%- css('css/disqus') %>
 <% if (theme.search == true && page.type == 'search') { %>
     <%- partial('_partial/search') %>
 <% } else if (page.type == 'tags') { %>
@@ -55,6 +56,7 @@
         <% } %>
     </div>
     <% } %>
+    <!-- /about -->
 
     <!-- Declaration for Gallery Section -->
     <!-- Only display on Gallery page -->
@@ -62,11 +64,11 @@
         <div class="about date" id="date">
             <h1><%= __('About this Gallery') %></h1>
             <div class="details">
-                <span>©<%- page.date.year() %></span>
-                <span><%- config.author %>. All rights reserved.</span>
+                <span>Copyright © <%- page.date.year() %> by <%- config.author %>. All rights reserved.</span>
             </div>
         </div>    
     <% } %>
+    <!-- /Gallery about -->
 
     <!-- At the bottom of post, display paginator for previous post or next post -->
     <div class="container post-prev-next">
@@ -91,6 +93,33 @@
         </a>
         <% } else { %><a class="prev"></a><% } %>
     </div>
-</article>
+    <!-- /paginator -->
 
+    
+    <% if (!page.no_comments) { %>
+        <!-- disqus comment system, using css/disqus.css to modify comment area size -->
+        <br/>
+        <hr>
+        <div class="disqus" id="disqus_thread" ></div>
+        <script>
+            /**
+            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    
+            * */
+            var disqus_config = function () {
+                this.page.url = config.permalink;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = config.permalink; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+    
+            (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://andysblog-2.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>   
+        <!-- /disqus comment system --> 
+    <% } %>
+</article>
 <% } %>
