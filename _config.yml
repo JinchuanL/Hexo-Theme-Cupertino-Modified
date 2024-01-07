@@ -77,7 +77,8 @@ footer:
     About: /about
     Categories: /categories
     Tags: /tags
-    Resume: /portfolio/resume/JinchuanLi-Resume.pdf
+    #Resume: /portfolio/resume/JinchuanLi-Resume.pdf
+    Resume: /JinchuanLi-Resume.pdf
     RSS - Atom: /atom.xml
     RSS - RSS2: /rss2.xml
     Update History: /update-history
